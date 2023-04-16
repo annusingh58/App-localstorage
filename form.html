@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <div>
+        <form onsubmit="formInfo(event)" style="width:25%; text-align: center; margin: auto; border: 1px solid black;">
+            <label>Name</label><br/>
+            <input id="userName" type="text" placeholder="Enter your name" /><br/><br/>
+            <label>Email ID</label><br/>
+            <input id="userEmail" type="email" placeholder="Enter your Email" /><br/><br/>
+            <label>Password</label><br/>
+            <input id="userPassword" type="password" placeholder="Enter your password" /><br/><br/>
+            <label>Confirm Password</label><br/>
+            <input id="userConfirmPassword" type="password" placeholder="COnfirm your password" /><br/><br/>
+            <input type="submit" value="register" />
+            <button onclick="getData()">Get Data</button>
+        </form>
+    </div>
+
+    <script src="./example.js"></script>
+</body>
+</html>
