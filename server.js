@@ -3,6 +3,8 @@ function register(event){
     // console.log(document.getElementById("useremail"))
 var name = console.log(document.getElementById("username"))
 console.log(name,"name here");
+var name = console.log(document.getElementById("username"))
+console.log(name,"name here");
 var name = console.log(document.getElementById("password"))
 console.log(name,"password");
 var name = console.log(document.getElementById("confim password"))
