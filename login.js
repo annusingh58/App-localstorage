@@ -16,18 +16,18 @@ function login(event) {
 
     var email = document.getElementById("userEmail").value;
     var password = document.getElementById("userPassword").value;
-    console.log(email, password, "checkdata")
+    // console.log(email, password, "checkdata")
 
 
-    var LS = JSON.parse(localStorage.getItem("users"))
+    var LS = JSON.parse(localStorage.getItem("users"));
     console.log(LS, "ls here")
 
 
     var flag = false;
     for (var i = 0; i < LS.length; i++) {
-        console.log(LS[i])
+        console.log(LS[i]);
          
-        if (LS[i].email==email && LS[i].password==password){
+        if (LS[i].userEmail==email && LS[i].userPassword==password){
             flag=true;
         }
         
