@@ -20,26 +20,33 @@ function login(event) {
 
 
     var LS = JSON.parse(localStorage.getItem("users"));
-    console.log(LS, "ls here")
+    // console.log(LS, "ls here")
 
-
-    var flag = false;
+    var currentUser;
+     var flag = false;
     for (var i = 0; i < LS.length; i++) {
         console.log(LS[i]);
          
         if (LS[i].userEmail==email && LS[i].userPassword==password){
             flag=true;
-        }
+            currentUser=LS[i];
+    
         
     }
     if(flag==true){
-
+        console.log(currentUser,"currentUser")
+        localStorage.setItem("currentUser",JSON.stringify(currentUser))
+        window.location.href="./home.html";
         alert("login successful")
     }
     else{
-        alert(" user data not match")
+        alert("credential not match")
     }
     
 
 
-}
+    }
+ }
+//  step 1 -once we got match credentail,save that user as currenrUser in Ls;
+//  step 2 -now save this cuurentuser into LS.
+//  step 3 redirect user to hoomepage
