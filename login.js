@@ -34,7 +34,7 @@ function login(event) {
         
     }
     if(flag==true){
-        console.log(currentUser,"currentUser")
+        // console.log(currentUser,"currentUser")
         localStorage.setItem("currentUser",JSON.stringify(currentUser))
         window.location.href="./home.html";
         alert("login successful")
